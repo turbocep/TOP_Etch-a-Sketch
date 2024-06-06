@@ -7,10 +7,12 @@ h1 {
   text-align: center;
 }
 
-
+body {
+  margin: 16px;
+}
 
 .container {
-  border: 2px solid red;
+  border: 2px solid black;
   width: 320px;
   height: 320px;
   margin: 16px auto;

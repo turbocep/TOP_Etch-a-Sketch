@@ -9,4 +9,10 @@ for (let i = 0; i < size; i++) {
   let row = document.createElement("div");
   row.classList.toggle("row");
   container.appendChild(row);
+  for (let j = 0; j < size; j++) {
+    //Creates a pixel within a row.
+    let pixel = document.createElement("div");
+    pixel.classList.toggle("pixel");
+    row.appendChild(pixel);
+  }
 }

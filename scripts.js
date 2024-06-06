@@ -14,5 +14,8 @@ for (let i = 0; i < size; i++) {
     let pixel = document.createElement("div");
     pixel.classList.toggle("pixel");
     row.appendChild(pixel);
+    pixel.addEventListener("mouseover", () => {
+      pixel.style.backgroundColor = "grey";
+    })
   }
 }

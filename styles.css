@@ -28,6 +28,9 @@ body {
 }
 
 .pixel {
-  border: 1px solid grey;
   flex: 1;
+}
+
+.pixel:hover {
+  background-color: red;
 }

@@ -16,4 +16,12 @@ body {
   width: 320px;
   height: 320px;
   margin: 16px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div {
+  background-color: blue;
+  width: 20px;
+  height: 20px;
 }

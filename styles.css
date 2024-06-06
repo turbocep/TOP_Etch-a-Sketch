@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+.container {
+  border: 2px solid red;
+  width: 320px;
+  height: 320px;
+  margin: 16px auto;
+}

@@ -29,9 +29,12 @@ function generateGrid(size) {
   }
 }
 
-const button = document.querySelector("button");
+const buttonCreateGrid = document.querySelector(".createGrid");
+const buttonDeleteGrid = document.querySelector(".deleteGrid");
 
-button.addEventListener("click", () => {
+buttonCreateGrid.addEventListener("click", () => {
   const size = prompt("Grid side length:");
   generateGrid(size);
 })
+
+buttonDeleteGrid.addEventListener("click", deleteGrid);

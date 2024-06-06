@@ -34,3 +34,15 @@ body {
 .pixel:hover {
   background-color: red;
 }
+
+body {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin: 8px auto;
+  width: max-content;
+  font-size: 18px;
+}

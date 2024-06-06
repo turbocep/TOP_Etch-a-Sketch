@@ -3,8 +3,15 @@ const container = document.querySelector(".container");
 
 let size = 16;
 
+function deleteGrid() {
+  while (container.firstChild) {
+    container.firstChild.remove();
+  }
+}
+
 
 function generateGrid(size) {
+  deleteGrid();
   for (let i = 0; i < size; i++) {
     //This creates a row within the big container.
     let row = document.createElement("div");
@@ -21,3 +28,10 @@ function generateGrid(size) {
     }
   }
 }
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  const size = prompt("Grid side length:");
+  generateGrid(size);
+})

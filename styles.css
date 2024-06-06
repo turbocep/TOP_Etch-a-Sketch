@@ -18,10 +18,14 @@ body {
   margin: 16px auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1;
+  border: 1px solid blue;
 }
 
 .div {
-  background-color: blue;
-  width: 20px;
-  height: 20px;
+  border: 1px solid grey;
 }

@@ -31,9 +31,6 @@ body {
   flex: 1;
 }
 
-.pixel:hover {
-  background-color: red;
-}
 
 body {
   display:flex;
@@ -42,7 +39,7 @@ body {
 }
 
 button {
-  margin: 8px auto;
-  width: max-content;
+  margin: 4px 0;
+  width: 100px;
   font-size: 18px;
 }

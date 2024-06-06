@@ -1,0 +1,2 @@
+IF color of is white, change color and add opacity 10.
+ELSE: change opacity up by 10%. 

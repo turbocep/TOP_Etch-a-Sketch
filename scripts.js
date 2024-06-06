@@ -23,9 +23,31 @@ function generateGrid(size) {
       pixel.classList.toggle("pixel");
       row.appendChild(pixel);
       pixel.addEventListener("mouseover", () => {
-        pixel.style.backgroundColor = "grey";
+        const colors = [0, 0, 0];
+        for (let i = 0; i < 3; i++) {
+          //Generate random RGB values.
+          colors[i] = Math.floor(Math.random() * 256 + 1)
+        }
+        pixel.style.backgroundColor = `rgb(
+          ${colors[0]}, 
+          ${colors[1]}, 
+          ${colors[2]})`;
       })
     }
+  }
+}
+
+function changePixelColor(pixel) {
+  if (pixel.style.backgroundColor == "white") {
+    const colors = [0, 0, 0];
+    for (let i = 0; i < 3; i++) {
+      //Generate random RGB values.
+      colors[i] = Math.floor(Math.random() * 256 + 1)
+    }
+    pixel.style.backgroundColor = `rgb(
+      ${colors[0]}, 
+      ${colors[1]}, 
+      ${colors[2]})`;
   }
 }
 
